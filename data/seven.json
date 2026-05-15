@@ -1,0 +1,108 @@
+{
+  "store": "seven",
+  "store_name": "セブン-イレブン",
+  "updated_at": "2026-05-15",
+  "note": "ダミーデータ（公式値は店舗・時期で変動。実運用前に最新値で更新してください）",
+  "items": [
+    {
+      "id": "seven-001",
+      "name": "サラダチキン（プレーン）",
+      "category": "惣菜",
+      "protein": 25.0,
+      "fat": 1.5,
+      "carbs": 1.0,
+      "calories": 113,
+      "price": 268
+    },
+    {
+      "id": "seven-002",
+      "name": "サラダチキン（ハーブ）",
+      "category": "惣菜",
+      "protein": 24.1,
+      "fat": 1.4,
+      "carbs": 1.1,
+      "calories": 108,
+      "price": 268
+    },
+    {
+      "id": "seven-003",
+      "name": "ゆで卵",
+      "category": "惣菜",
+      "protein": 7.6,
+      "fat": 6.4,
+      "carbs": 0.5,
+      "calories": 87,
+      "price": 86
+    },
+    {
+      "id": "seven-004",
+      "name": "焼き鳥（もも塩）2本",
+      "category": "惣菜",
+      "protein": 17.0,
+      "fat": 8.4,
+      "carbs": 0.8,
+      "calories": 150,
+      "price": 248
+    },
+    {
+      "id": "seven-005",
+      "name": "ブランパン2個入り",
+      "category": "パン",
+      "protein": 10.6,
+      "fat": 6.2,
+      "carbs": 6.0,
+      "calories": 126,
+      "price": 135
+    },
+    {
+      "id": "seven-006",
+      "name": "鮭おにぎり",
+      "category": "おにぎり",
+      "protein": 5.5,
+      "fat": 1.6,
+      "carbs": 39.0,
+      "calories": 192,
+      "price": 156
+    },
+    {
+      "id": "seven-007",
+      "name": "全粒粉サンド ハム&チーズ",
+      "category": "サンドイッチ",
+      "protein": 13.8,
+      "fat": 13.5,
+      "carbs": 26.2,
+      "calories": 285,
+      "price": 268
+    },
+    {
+      "id": "seven-008",
+      "name": "ギリシャヨーグルト オイコス 加糖",
+      "category": "乳製品",
+      "protein": 10.1,
+      "fat": 0.0,
+      "carbs": 12.4,
+      "calories": 92,
+      "price": 168
+    },
+    {
+      "id": "seven-009",
+      "name": "プロテインバー（チョコ）",
+      "category": "プロテイン",
+      "protein": 15.0,
+      "fat": 7.0,
+      "carbs": 14.0,
+      "calories": 180,
+      "price": 198
+    },
+    {
+      "id": "seven-010",
+      "name": "ミックスナッツ 小袋",
+      "category": "ナッツ",
+      "protein": 6.8,
+      "fat": 21.2,
+      "carbs": 6.5,
+      "calories": 240,
+      "price": 198
+    }
+  ]
+}

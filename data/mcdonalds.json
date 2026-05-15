@@ -1,0 +1,108 @@
+{
+  "store": "mcdonalds",
+  "store_name": "マクドナルド",
+  "updated_at": "2026-05-15",
+  "note": "ダミーデータ（公式値は時期で変動。実運用前に最新値で更新してください）",
+  "items": [
+    {
+      "id": "mac-001",
+      "name": "ハンバーガー",
+      "category": "バーガー",
+      "protein": 12.6,
+      "fat": 9.0,
+      "carbs": 29.0,
+      "calories": 256,
+      "price": 200
+    },
+    {
+      "id": "mac-002",
+      "name": "ダブルチーズバーガー",
+      "category": "バーガー",
+      "protein": 26.0,
+      "fat": 25.7,
+      "carbs": 30.9,
+      "calories": 457,
+      "price": 400
+    },
+    {
+      "id": "mac-003",
+      "name": "ビッグマック",
+      "category": "バーガー",
+      "protein": 26.0,
+      "fat": 28.3,
+      "carbs": 41.8,
+      "calories": 530,
+      "price": 480
+    },
+    {
+      "id": "mac-004",
+      "name": "てりやきマックバーガー",
+      "category": "バーガー",
+      "protein": 14.7,
+      "fat": 27.3,
+      "carbs": 35.0,
+      "calories": 478,
+      "price": 380
+    },
+    {
+      "id": "mac-005",
+      "name": "チキンクリスプ",
+      "category": "バーガー",
+      "protein": 13.9,
+      "fat": 16.4,
+      "carbs": 30.7,
+      "calories": 326,
+      "price": 200
+    },
+    {
+      "id": "mac-006",
+      "name": "サイドサラダ",
+      "category": "サイド",
+      "protein": 0.8,
+      "fat": 0.1,
+      "carbs": 2.8,
+      "calories": 15,
+      "price": 250
+    },
+    {
+      "id": "mac-007",
+      "name": "マックフライポテト M",
+      "category": "サイド",
+      "protein": 4.7,
+      "fat": 20.6,
+      "carbs": 47.7,
+      "calories": 410,
+      "price": 350
+    },
+    {
+      "id": "mac-008",
+      "name": "チキンマックナゲット 5ピース",
+      "category": "サイド",
+      "protein": 14.7,
+      "fat": 16.0,
+      "carbs": 13.7,
+      "calories": 263,
+      "price": 250
+    },
+    {
+      "id": "mac-009",
+      "name": "プレミアムローストコーヒー M（ブラック）",
+      "category": "ドリンク",
+      "protein": 0.4,
+      "fat": 0.4,
+      "carbs": 1.5,
+      "calories": 12,
+      "price": 250
+    },
+    {
+      "id": "mac-010",
+      "name": "エッグマックマフィン",
+      "category": "朝食",
+      "protein": 19.2,
+      "fat": 13.9,
+      "carbs": 27.1,
+      "calories": 311,
+      "price": 250
+    }
+  ]
+}

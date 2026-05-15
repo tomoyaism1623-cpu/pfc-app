@@ -1,0 +1,108 @@
+{
+  "store": "matsuya",
+  "store_name": "松屋",
+  "updated_at": "2026-05-15",
+  "note": "ダミーデータ（公式値は時期で変動。実運用前に最新値で更新してください）",
+  "items": [
+    {
+      "id": "matsuya-001",
+      "name": "牛めし（並盛）",
+      "category": "丼",
+      "protein": 19.8,
+      "fat": 18.0,
+      "carbs": 102.0,
+      "calories": 650,
+      "price": 430
+    },
+    {
+      "id": "matsuya-002",
+      "name": "プレミアム牛めし（並盛）",
+      "category": "丼",
+      "protein": 20.2,
+      "fat": 23.7,
+      "carbs": 103.5,
+      "calories": 720,
+      "price": 480
+    },
+    {
+      "id": "matsuya-003",
+      "name": "オリジナルカレー",
+      "category": "カレー",
+      "protein": 12.5,
+      "fat": 22.0,
+      "carbs": 110.0,
+      "calories": 690,
+      "price": 490
+    },
+    {
+      "id": "matsuya-004",
+      "name": "焼肉定食",
+      "category": "定食",
+      "protein": 30.5,
+      "fat": 35.0,
+      "carbs": 95.0,
+      "calories": 870,
+      "price": 790
+    },
+    {
+      "id": "matsuya-005",
+      "name": "豚生姜焼定食",
+      "category": "定食",
+      "protein": 27.0,
+      "fat": 28.0,
+      "carbs": 100.0,
+      "calories": 800,
+      "price": 730
+    },
+    {
+      "id": "matsuya-006",
+      "name": "ささみねぎ塩定食",
+      "category": "定食",
+      "protein": 35.0,
+      "fat": 10.0,
+      "carbs": 95.0,
+      "calories": 620,
+      "price": 750
+    },
+    {
+      "id": "matsuya-007",
+      "name": "牛皿（並盛）単品",
+      "category": "単品",
+      "protein": 14.0,
+      "fat": 17.0,
+      "carbs": 8.0,
+      "calories": 250,
+      "price": 330
+    },
+    {
+      "id": "matsuya-008",
+      "name": "サラダ（生野菜）",
+      "category": "サイド",
+      "protein": 1.0,
+      "fat": 0.2,
+      "carbs": 4.5,
+      "calories": 22,
+      "price": 100
+    },
+    {
+      "id": "matsuya-009",
+      "name": "豚汁（小）",
+      "category": "サイド",
+      "protein": 5.0,
+      "fat": 6.0,
+      "carbs": 8.0,
+      "calories": 110,
+      "price": 180
+    },
+    {
+      "id": "matsuya-010",
+      "name": "鶏のから揚げ定食",
+      "category": "定食",
+      "protein": 28.0,
+      "fat": 32.0,
+      "carbs": 105.0,
+      "calories": 860,
+      "price": 790
+    }
+  ]
+}
