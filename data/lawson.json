@@ -125,6 +125,26 @@
       "price": 198
     },
     {
+      "id": "lawson-013s",
+      "name": "枝豆（塩ゆで）",
+      "category": "サイド",
+      "protein": 7.8,
+      "fat": 3.2,
+      "carbs": 4.8,
+      "calories": 82,
+      "price": 158
+    },
+    {
+      "id": "lawson-013t",
+      "name": "スティックチーズ 2本",
+      "category": "サイド",
+      "protein": 7.6,
+      "fat": 11.0,
+      "carbs": 0.5,
+      "calories": 130,
+      "price": 138
+    },
+    {
       "id": "lawson-013",
       "name": "旨辛チキン",
       "category": "惣菜",

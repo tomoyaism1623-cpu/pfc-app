@@ -106,13 +106,23 @@
     },
     {
       "id": "matsuya-011",
-      "name": "牛めしセット（並盛・サラダ・みそ汁）",
-      "category": "セット",
-      "protein": 20.5,
-      "fat": 31.2,
-      "carbs": 90.8,
-      "calories": 738,
-      "price": 660
+      "name": "みそ汁",
+      "category": "サイド",
+      "protein": 2.1,
+      "fat": 1.0,
+      "carbs": 3.5,
+      "calories": 32,
+      "price": 100
+    },
+    {
+      "id": "matsuya-012s",
+      "name": "生野菜サラダ",
+      "category": "サイド",
+      "protein": 1.2,
+      "fat": 0.2,
+      "carbs": 3.8,
+      "calories": 22,
+      "price": 150
     },
     {
       "id": "matsuya-012",

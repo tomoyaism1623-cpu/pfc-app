@@ -106,13 +106,33 @@
     },
     {
       "id": "sukiya-011",
-      "name": "牛丼セット（並盛・みそ汁・サラダ）",
-      "category": "セット",
-      "protein": 25.3,
-      "fat": 19.8,
-      "carbs": 95.2,
-      "calories": 668,
-      "price": 630
+      "name": "みそ汁",
+      "category": "サイド",
+      "protein": 1.8,
+      "fat": 0.8,
+      "carbs": 2.9,
+      "calories": 25,
+      "price": 60
+    },
+    {
+      "id": "sukiya-011b",
+      "name": "サラダ",
+      "category": "サイド",
+      "protein": 0.8,
+      "fat": 0.1,
+      "carbs": 2.5,
+      "calories": 14,
+      "price": 120
+    },
+    {
+      "id": "sukiya-011c",
+      "name": "お新香",
+      "category": "サイド",
+      "protein": 0.6,
+      "fat": 0.1,
+      "carbs": 2.2,
+      "calories": 12,
+      "price": 60
     },
     {
       "id": "sukiya-012",

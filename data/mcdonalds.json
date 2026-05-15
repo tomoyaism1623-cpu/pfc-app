@@ -146,23 +146,23 @@
     },
     {
       "id": "mac-015",
-      "name": "バリューセット ビッグマック",
-      "category": "セット",
-      "protein": 31.6,
-      "fat": 47.8,
-      "carbs": 94.5,
-      "calories": 934,
-      "price": 870
+      "name": "マックフライポテト S",
+      "category": "サイド",
+      "protein": 3.2,
+      "fat": 11.6,
+      "carbs": 30.6,
+      "calories": 237,
+      "price": 200
     },
     {
       "id": "mac-016",
-      "name": "バリューセット ダブルチーズバーガー",
-      "category": "セット",
-      "protein": 31.9,
-      "fat": 44.9,
-      "carbs": 84.2,
-      "calories": 868,
-      "price": 850
+      "name": "マックフライポテト L",
+      "category": "サイド",
+      "protein": 7.5,
+      "fat": 27.0,
+      "carbs": 71.8,
+      "calories": 557,
+      "price": 370
     },
     {
       "id": "mac-017",

@@ -125,6 +125,26 @@
       "price": 320
     },
     {
+      "id": "seven-013s",
+      "name": "豆腐バー プレーン",
+      "category": "サイド",
+      "protein": 10.5,
+      "fat": 5.8,
+      "carbs": 1.2,
+      "calories": 98,
+      "price": 138
+    },
+    {
+      "id": "seven-013t",
+      "name": "スティックチーズ",
+      "category": "サイド",
+      "protein": 5.4,
+      "fat": 8.2,
+      "carbs": 0.4,
+      "calories": 96,
+      "price": 128
+    },
+    {
       "id": "seven-013",
       "name": "北海道産小麦のもちもちパスタ 明太クリーム",
       "category": "パスタ",

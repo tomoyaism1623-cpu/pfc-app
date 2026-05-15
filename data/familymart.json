@@ -125,6 +125,26 @@
       "price": 208
     },
     {
+      "id": "fam-013s",
+      "name": "温泉たまご",
+      "category": "サイド",
+      "protein": 6.4,
+      "fat": 5.6,
+      "carbs": 0.6,
+      "calories": 78,
+      "price": 88
+    },
+    {
+      "id": "fam-013t",
+      "name": "たんぱく質が摂れるえだまめ",
+      "category": "サイド",
+      "protein": 9.2,
+      "fat": 3.8,
+      "carbs": 5.4,
+      "calories": 94,
+      "price": 168
+    },
+    {
       "id": "fam-013",
       "name": "ピリ辛チキン",
       "category": "惣菜",
