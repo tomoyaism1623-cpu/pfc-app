@@ -165,6 +165,96 @@
       "price": 370
     },
     {
+      "id": "mac-016b",
+      "name": "チキンマックナゲット 10ピース",
+      "category": "サイド",
+      "protein": 30.6,
+      "fat": 31.8,
+      "carbs": 28.8,
+      "calories": 524,
+      "price": 540
+    },
+    {
+      "id": "mac-016c",
+      "name": "チキンマックナゲット 15ピース",
+      "category": "サイド",
+      "protein": 45.9,
+      "fat": 47.7,
+      "carbs": 43.2,
+      "calories": 786,
+      "price": 790
+    },
+    {
+      "id": "mac-016d",
+      "name": "コーン",
+      "category": "サイド",
+      "protein": 2.5,
+      "fat": 1.6,
+      "carbs": 23.4,
+      "calories": 119,
+      "price": 150
+    },
+    {
+      "id": "mac-016e",
+      "name": "サイドサラダ",
+      "category": "サイド",
+      "protein": 1.4,
+      "fat": 0.1,
+      "carbs": 4.8,
+      "calories": 25,
+      "price": 160
+    },
+    {
+      "id": "mac-016f",
+      "name": "アップルパイ",
+      "category": "デザート",
+      "protein": 2.1,
+      "fat": 9.9,
+      "carbs": 33.4,
+      "calories": 231,
+      "price": 200
+    },
+    {
+      "id": "mac-016g",
+      "name": "チョコパイ",
+      "category": "デザート",
+      "protein": 3.5,
+      "fat": 10.5,
+      "carbs": 35.2,
+      "calories": 245,
+      "price": 200
+    },
+    {
+      "id": "mac-016h",
+      "name": "マックフルーリー オレオクッキー",
+      "category": "デザート",
+      "protein": 6.8,
+      "fat": 5.2,
+      "carbs": 50.6,
+      "calories": 275,
+      "price": 320
+    },
+    {
+      "id": "mac-016i",
+      "name": "ソフトツイスト コーン",
+      "category": "デザート",
+      "protein": 4.1,
+      "fat": 3.5,
+      "carbs": 25.8,
+      "calories": 149,
+      "price": 170
+    },
+    {
+      "id": "mac-016j",
+      "name": "マックシェイク バニラ M",
+      "category": "デザート",
+      "protein": 6.6,
+      "fat": 4.2,
+      "carbs": 55.8,
+      "calories": 285,
+      "price": 290
+    },
+    {
       "id": "mac-017",
       "name": "サムライマック 炙り醤油風 ダブル肉厚ビーフ",
       "category": "バーガー",
