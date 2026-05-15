@@ -22,13 +22,23 @@ export function MenuCard({ item, rank }: Props) {
       <div className="flex items-center justify-between gap-2">
         {/* 左：ランク＋商品名 */}
         <div className="min-w-0">
-          <div className="flex items-center gap-1.5 mb-0.5">
+          <div className="flex items-center gap-1.5 mb-0.5 flex-wrap">
             <span
               className="shrink-0 text-[10px] font-black"
               style={{ color: "#52B788" }}
             >
               {rank}位
             </span>
+            {item.limited && (
+              <span className="shrink-0 rounded-full px-1.5 py-0.5 text-[9px] font-bold text-white" style={{ background: "#E07B54" }}>
+                期間限定
+              </span>
+            )}
+            {item.category === "セット" && (
+              <span className="shrink-0 rounded-full px-1.5 py-0.5 text-[9px] font-bold" style={{ background: "#E8DCC8", color: "#2D6A4F" }}>
+                セット
+              </span>
+            )}
             <span className="truncate text-sm font-bold text-stone-800">
               {item.name}
             </span>

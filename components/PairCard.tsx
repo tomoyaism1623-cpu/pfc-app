@@ -33,15 +33,25 @@ export function PairCard({ pair, rank }: Props) {
 
       {/* 商品名2行 */}
       <div className="mb-2 space-y-0.5">
-        <p className="text-sm font-bold text-stone-800 truncate">
-          {a.name}
-        </p>
+        <div className="flex items-center gap-1.5 flex-wrap">
+          {a.limited && (
+            <span className="shrink-0 rounded-full px-1.5 py-0.5 text-[9px] font-bold text-white" style={{ background: "#E07B54" }}>
+              期間限定
+            </span>
+          )}
+          <p className="text-sm font-bold text-stone-800 truncate">{a.name}</p>
+        </div>
         <p className="text-[11px] text-stone-500">
           P:{a.protein}g　F:{a.fat}g　C:{a.carbs}g　{a.calories}kcal　¥{a.price}
         </p>
-        <p className="text-sm font-bold text-stone-800 truncate mt-1">
-          {b.name}
-        </p>
+        <div className="flex items-center gap-1.5 flex-wrap mt-1">
+          {b.limited && (
+            <span className="shrink-0 rounded-full px-1.5 py-0.5 text-[9px] font-bold text-white" style={{ background: "#E07B54" }}>
+              期間限定
+            </span>
+          )}
+          <p className="text-sm font-bold text-stone-800 truncate">{b.name}</p>
+        </div>
         <p className="text-[11px] text-stone-500">
           P:{b.protein}g　F:{b.fat}g　C:{b.carbs}g　{b.calories}kcal　¥{b.price}
         </p>

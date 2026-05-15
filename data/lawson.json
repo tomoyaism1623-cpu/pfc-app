@@ -123,6 +123,41 @@
       "carbs": 16.0,
       "calories": 180,
       "price": 198
+    },
+    {
+      "id": "lawson-013",
+      "name": "旨辛チキン",
+      "category": "惣菜",
+      "protein": 15.6,
+      "fat": 13.4,
+      "carbs": 10.2,
+      "calories": 222,
+      "price": 238,
+      "limited": true,
+      "limited_until": "2026-06-30"
+    },
+    {
+      "id": "lawson-014",
+      "name": "冷やしとろろそば",
+      "category": "麺",
+      "protein": 12.4,
+      "fat": 3.2,
+      "carbs": 61.8,
+      "calories": 326,
+      "price": 448,
+      "limited": true,
+      "limited_until": "2026-08-31"
+    },
+    {
+      "id": "lawson-015",
+      "name": "ブランのカレーパン",
+      "category": "パン",
+      "protein": 8.6,
+      "fat": 9.8,
+      "carbs": 14.5,
+      "calories": 178,
+      "price": 160,
+      "limited": true
     }
   ]
 }

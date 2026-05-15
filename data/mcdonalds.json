@@ -143,6 +143,61 @@
       "carbs": 14.4,
       "calories": 262,
       "price": 290
+    },
+    {
+      "id": "mac-015",
+      "name": "バリューセット ビッグマック",
+      "category": "セット",
+      "protein": 31.6,
+      "fat": 47.8,
+      "carbs": 94.5,
+      "calories": 934,
+      "price": 870
+    },
+    {
+      "id": "mac-016",
+      "name": "バリューセット ダブルチーズバーガー",
+      "category": "セット",
+      "protein": 31.9,
+      "fat": 44.9,
+      "carbs": 84.2,
+      "calories": 868,
+      "price": 850
+    },
+    {
+      "id": "mac-017",
+      "name": "サムライマック 炙り醤油風 ダブル肉厚ビーフ",
+      "category": "バーガー",
+      "protein": 34.2,
+      "fat": 32.5,
+      "carbs": 46.8,
+      "calories": 619,
+      "price": 620,
+      "limited": true,
+      "limited_until": "2026-06-30"
+    },
+    {
+      "id": "mac-018",
+      "name": "チキタツタ 和風おろし",
+      "category": "バーガー",
+      "protein": 18.4,
+      "fat": 14.8,
+      "carbs": 41.2,
+      "calories": 368,
+      "price": 490,
+      "limited": true,
+      "limited_until": "2026-06-30"
+    },
+    {
+      "id": "mac-019",
+      "name": "グラコロ",
+      "category": "バーガー",
+      "protein": 14.2,
+      "fat": 20.8,
+      "carbs": 44.5,
+      "calories": 418,
+      "price": 390,
+      "limited": true
     }
   ]
 }

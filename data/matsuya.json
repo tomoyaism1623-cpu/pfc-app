@@ -103,6 +103,39 @@
       "carbs": 99.7,
       "calories": 793,
       "price": 690
+    },
+    {
+      "id": "matsuya-011",
+      "name": "牛めしセット（並盛・サラダ・みそ汁）",
+      "category": "セット",
+      "protein": 20.5,
+      "fat": 31.2,
+      "carbs": 90.8,
+      "calories": 738,
+      "price": 660
+    },
+    {
+      "id": "matsuya-012",
+      "name": "焼き牛定食（並盛）",
+      "category": "定食",
+      "protein": 28.4,
+      "fat": 26.5,
+      "carbs": 85.6,
+      "calories": 703,
+      "price": 890,
+      "limited": true,
+      "limited_until": "2026-06-30"
+    },
+    {
+      "id": "matsuya-013",
+      "name": "豚バラ生姜焼き定食",
+      "category": "定食",
+      "protein": 26.8,
+      "fat": 29.3,
+      "carbs": 88.2,
+      "calories": 728,
+      "price": 790,
+      "limited": true
     }
   ]
 }

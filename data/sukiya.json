@@ -103,6 +103,39 @@
       "carbs": 62.5,
       "calories": 413,
       "price": 430
+    },
+    {
+      "id": "sukiya-011",
+      "name": "牛丼セット（並盛・みそ汁・サラダ）",
+      "category": "セット",
+      "protein": 25.3,
+      "fat": 19.8,
+      "carbs": 95.2,
+      "calories": 668,
+      "price": 630
+    },
+    {
+      "id": "sukiya-012",
+      "name": "ごろっとチキンカレー（並盛）",
+      "category": "カレー",
+      "protein": 24.6,
+      "fat": 15.2,
+      "carbs": 99.4,
+      "calories": 635,
+      "price": 620,
+      "limited": true,
+      "limited_until": "2026-06-30"
+    },
+    {
+      "id": "sukiya-013",
+      "name": "スタミナ牛丼（並盛）",
+      "category": "牛丼",
+      "protein": 25.8,
+      "fat": 22.4,
+      "carbs": 92.5,
+      "calories": 678,
+      "price": 560,
+      "limited": true
     }
   ]
 }

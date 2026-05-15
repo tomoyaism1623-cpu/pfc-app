@@ -9,6 +9,8 @@ export type MenuItem = {
   carbs: number;   // 炭水化物（g）
   calories: number; // カロリー（kcal）
   price?: number;
+  limited?: boolean;       // 期間限定フラグ
+  limited_until?: string;  // 販売終了予定日（任意）
 };
 
 export type StoreData = {
