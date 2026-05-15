@@ -37,7 +37,6 @@ export default function StorePage({ params }: { params: Promise<PageParams> }) {
         </Link>
 
         <div className="mt-2 flex items-center gap-2">
-          <span className="text-2xl">{currentStore?.emoji}</span>
           <div>
             <h1 className="text-lg font-black leading-tight" style={{ color: "#2D6A4F" }}>
               {data.store_name}
@@ -59,7 +58,7 @@ export default function StorePage({ params }: { params: Promise<PageParams> }) {
                   : { background: "#fff", color: "#2D6A4F" }
               }
             >
-              {s.emoji} {s.name}
+              {s.name}
             </Link>
           ))}
         </nav>

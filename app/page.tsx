@@ -34,7 +34,6 @@ export default function Home() {
                 className="flex flex-col items-center justify-center gap-2 rounded-2xl bg-white p-5 shadow-sm transition-all hover:shadow-md active:scale-95"
                 style={{ minHeight: "110px" }}
               >
-                <span className="text-3xl" aria-hidden>{s.emoji}</span>
                 <span
                   className="text-sm font-bold text-center leading-tight"
                   style={{ color: "#2D6A4F" }}
