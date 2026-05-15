@@ -1,0 +1,128 @@
+{
+  "store": "lawson",
+  "store_name": "ローソン",
+  "updated_at": "2026-05-15",
+  "note": "ダミーデータ（Routineによる自動更新前の初期値）",
+  "items": [
+    {
+      "id": "lawson-001",
+      "name": "からあげクン レギュラー",
+      "category": "惣菜",
+      "protein": 13.8,
+      "fat": 14.8,
+      "carbs": 11.8,
+      "calories": 235,
+      "price": 238
+    },
+    {
+      "id": "lawson-002",
+      "name": "Lチキ 旨塩",
+      "category": "惣菜",
+      "protein": 20.0,
+      "fat": 16.9,
+      "carbs": 11.3,
+      "calories": 274,
+      "price": 220
+    },
+    {
+      "id": "lawson-003",
+      "name": "サラダチキン プレーン",
+      "category": "惣菜",
+      "protein": 23.4,
+      "fat": 1.2,
+      "carbs": 0.0,
+      "calories": 104,
+      "price": 258
+    },
+    {
+      "id": "lawson-004",
+      "name": "ゆでたまご",
+      "category": "惣菜",
+      "protein": 7.5,
+      "fat": 6.2,
+      "carbs": 0.2,
+      "calories": 87,
+      "price": 78
+    },
+    {
+      "id": "lawson-005",
+      "name": "スモークタン",
+      "category": "惣菜",
+      "protein": 12.8,
+      "fat": 9.6,
+      "carbs": 1.0,
+      "calories": 140,
+      "price": 278
+    },
+    {
+      "id": "lawson-006",
+      "name": "おにぎり 鮭",
+      "category": "おにぎり",
+      "protein": 5.2,
+      "fat": 1.4,
+      "carbs": 38.5,
+      "calories": 186,
+      "price": 148
+    },
+    {
+      "id": "lawson-007",
+      "name": "おにぎり ツナマヨネーズ",
+      "category": "おにぎり",
+      "protein": 5.0,
+      "fat": 6.2,
+      "carbs": 38.0,
+      "calories": 229,
+      "price": 160
+    },
+    {
+      "id": "lawson-008",
+      "name": "NL ブランパン2個入",
+      "category": "パン",
+      "protein": 9.8,
+      "fat": 5.4,
+      "carbs": 7.6,
+      "calories": 119,
+      "price": 140
+    },
+    {
+      "id": "lawson-009",
+      "name": "ギリシャヨーグルト PARTHENO",
+      "category": "乳製品",
+      "protein": 10.0,
+      "fat": 5.5,
+      "carbs": 9.5,
+      "calories": 128,
+      "price": 198
+    },
+    {
+      "id": "lawson-010",
+      "name": "サンドイッチ ハムチーズ",
+      "category": "サンドイッチ",
+      "protein": 14.2,
+      "fat": 14.6,
+      "carbs": 27.0,
+      "calories": 287,
+      "price": 298
+    },
+    {
+      "id": "lawson-011",
+      "name": "チキンと野菜のトマト煮込み",
+      "category": "惣菜",
+      "protein": 19.5,
+      "fat": 8.2,
+      "carbs": 12.4,
+      "calories": 200,
+      "price": 358
+    },
+    {
+      "id": "lawson-012",
+      "name": "プロテインバー チョコ",
+      "category": "プロテイン",
+      "protein": 15.0,
+      "fat": 6.5,
+      "carbs": 16.0,
+      "calories": 180,
+      "price": 198
+    }
+  ]
+}

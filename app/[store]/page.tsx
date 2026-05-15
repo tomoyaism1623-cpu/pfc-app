@@ -7,23 +7,30 @@ import { use, useMemo, useState } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getStoreData, STORES } from "@/lib/stores";
-import { PRESETS, sortByCloseness } from "@/lib/score";
+import { PRESETS, sortByCloseness, bestPairs } from "@/lib/score";
 import { PFCInput } from "@/components/PFCInput";
 import { MenuCard } from "@/components/MenuCard";
+import { PairCard } from "@/components/PairCard";
 import type { TargetPFC } from "@/lib/types";
 
 type PageParams = { store: string };
+type Mode = "single" | "pair";
 
 export default function StorePage({ params }: { params: Promise<PageParams> }) {
   const { store } = use(params);
   const data = getStoreData(store);
   if (!data) notFound();
 
-  const currentStore = STORES.find((s) => s.slug === store);
   const [target, setTarget] = useState<TargetPFC>(PRESETS[1].target);
+  const [mode, setMode] = useState<Mode>("single");
 
   const sorted = useMemo(
     () => sortByCloseness(data.items, target),
+    [data.items, target]
+  );
+
+  const pairs = useMemo(
+    () => bestPairs(data.items, target),
     [data.items, target]
   );
 
@@ -69,16 +76,51 @@ export default function StorePage({ params }: { params: Promise<PageParams> }) {
         <PFCInput value={target} onChange={setTarget} />
       </div>
 
+      {/* 単品 / 2品セット トグル */}
+      <div className="mb-3 flex rounded-full p-1" style={{ background: "#E8DCC8" }}>
+        <button
+          onClick={() => setMode("single")}
+          className="flex-1 rounded-full py-1.5 text-xs font-bold transition-all"
+          style={
+            mode === "single"
+              ? { background: "#2D6A4F", color: "#fff" }
+              : { background: "transparent", color: "#2D6A4F" }
+          }
+        >
+          単品
+        </button>
+        <button
+          onClick={() => setMode("pair")}
+          className="flex-1 rounded-full py-1.5 text-xs font-bold transition-all"
+          style={
+            mode === "pair"
+              ? { background: "#2D6A4F", color: "#fff" }
+              : { background: "transparent", color: "#2D6A4F" }
+          }
+        >
+          2品セット
+        </button>
+      </div>
+
       {/* メニュー一覧 */}
       <section>
         <p className="mb-2 text-xs font-semibold text-stone-500">
           おすすめ順（目標に近い順）
         </p>
-        <ul className="space-y-2">
-          {sorted.map((item, i) => (
-            <MenuCard key={item.id} item={item} target={target} rank={i + 1} />
-          ))}
-        </ul>
+
+        {mode === "single" ? (
+          <ul className="space-y-2">
+            {sorted.map((item, i) => (
+              <MenuCard key={item.id} item={item} target={target} rank={i + 1} />
+            ))}
+          </ul>
+        ) : (
+          <ul className="space-y-2">
+            {pairs.map((pair, i) => (
+              <PairCard key={`${pair.items[0].id}-${pair.items[1].id}`} pair={pair} target={target} rank={i + 1} />
+            ))}
+          </ul>
+        )}
       </section>
 
       <p className="mt-6 text-center text-[10px] text-stone-400">

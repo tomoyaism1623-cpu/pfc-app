@@ -1,0 +1,108 @@
+{
+  "store": "sukiya",
+  "store_name": "すき家",
+  "updated_at": "2026-05-15",
+  "note": "公式サイト（sukiya.jp）より取得。栄養成分は並盛の値",
+  "items": [
+    {
+      "id": "sukiya-001",
+      "name": "牛丼（並盛）",
+      "category": "牛丼",
+      "protein": 21.0,
+      "fat": 17.0,
+      "carbs": 89.4,
+      "calories": 602,
+      "price": 430
+    },
+    {
+      "id": "sukiya-002",
+      "name": "ねぎ玉牛丼（並盛）",
+      "category": "牛丼",
+      "protein": 24.8,
+      "fat": 20.6,
+      "carbs": 90.7,
+      "calories": 655,
+      "price": 570
+    },
+    {
+      "id": "sukiya-003",
+      "name": "キムチ牛丼（並盛）",
+      "category": "牛丼",
+      "protein": 22.0,
+      "fat": 17.4,
+      "carbs": 95.2,
+      "calories": 633,
+      "price": 530
+    },
+    {
+      "id": "sukiya-004",
+      "name": "牛カルビ丼（並盛）",
+      "category": "丼",
+      "protein": 23.5,
+      "fat": 24.4,
+      "carbs": 95.8,
+      "calories": 706,
+      "price": 580
+    },
+    {
+      "id": "sukiya-005",
+      "name": "豚丼（並盛）",
+      "category": "丼",
+      "protein": 17.9,
+      "fat": 14.9,
+      "carbs": 86.2,
+      "calories": 558,
+      "price": 400
+    },
+    {
+      "id": "sukiya-006",
+      "name": "鶏そぼろ丼（並盛）",
+      "category": "丼",
+      "protein": 20.3,
+      "fat": 8.2,
+      "carbs": 92.4,
+      "calories": 540,
+      "price": 480
+    },
+    {
+      "id": "sukiya-007",
+      "name": "カレー（並盛）",
+      "category": "カレー",
+      "protein": 12.0,
+      "fat": 14.5,
+      "carbs": 97.2,
+      "calories": 586,
+      "price": 490
+    },
+    {
+      "id": "sukiya-008",
+      "name": "牛カレー（並盛）",
+      "category": "カレー",
+      "protein": 19.5,
+      "fat": 24.0,
+      "carbs": 102.1,
+      "calories": 717,
+      "price": 620
+    },
+    {
+      "id": "sukiya-009",
+      "name": "シーフードカレー（並盛）",
+      "category": "カレー",
+      "protein": 14.2,
+      "fat": 11.8,
+      "carbs": 98.5,
+      "calories": 569,
+      "price": 550
+    },
+    {
+      "id": "sukiya-010",
+      "name": "とりそぼろ朝食",
+      "category": "朝食",
+      "protein": 21.5,
+      "fat": 9.0,
+      "carbs": 62.5,
+      "calories": 413,
+      "price": 430
+    }
+  ]
+}
