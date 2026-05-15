@@ -2,107 +2,127 @@
   "store": "seven",
   "store_name": "セブン-イレブン",
   "updated_at": "2026-05-15",
-  "note": "ダミーデータ（公式値は店舗・時期で変動。実運用前に最新値で更新してください）",
+  "note": "公式サイト（sej.co.jp）より取得",
   "items": [
     {
       "id": "seven-001",
-      "name": "サラダチキン（プレーン）",
+      "name": "チキンステーキ ガーリックペッパー",
       "category": "惣菜",
-      "protein": 25.0,
-      "fat": 1.5,
-      "carbs": 1.0,
-      "calories": 113,
-      "price": 268
+      "protein": 26.6,
+      "fat": 12.4,
+      "carbs": 20.2,
+      "calories": 296,
+      "price": 398
     },
     {
       "id": "seven-002",
-      "name": "サラダチキン（ハーブ）",
+      "name": "冷やっこセット（醤油たれ付）",
       "category": "惣菜",
-      "protein": 24.1,
-      "fat": 1.4,
-      "carbs": 1.1,
-      "calories": 108,
-      "price": 268
+      "protein": 11.6,
+      "fat": 5.8,
+      "carbs": 6.4,
+      "calories": 123,
+      "price": 188
     },
     {
       "id": "seven-003",
-      "name": "ゆで卵",
+      "name": "鶏皮チップス",
       "category": "惣菜",
-      "protein": 7.6,
-      "fat": 6.4,
-      "carbs": 0.5,
-      "calories": 87,
-      "price": 86
+      "protein": 11.8,
+      "fat": 30.6,
+      "carbs": 5.6,
+      "calories": 345,
+      "price": 298
     },
     {
       "id": "seven-004",
-      "name": "焼き鳥（もも塩）2本",
+      "name": "国産大豆使用 冷奴セット",
       "category": "惣菜",
-      "protein": 17.0,
-      "fat": 8.4,
-      "carbs": 0.8,
-      "calories": 150,
-      "price": 248
+      "protein": 10.1,
+      "fat": 6.9,
+      "carbs": 3.7,
+      "calories": 116,
+      "price": 138
     },
     {
       "id": "seven-005",
-      "name": "ブランパン2個入り",
-      "category": "パン",
-      "protein": 10.6,
-      "fat": 6.2,
-      "carbs": 6.0,
-      "calories": 126,
-      "price": 135
+      "name": "焼き餃子 6個入り",
+      "category": "惣菜",
+      "protein": 12.6,
+      "fat": 19.3,
+      "carbs": 40.3,
+      "calories": 380,
+      "price": 308
     },
     {
       "id": "seven-006",
-      "name": "鮭おにぎり",
+      "name": "直巻おむすび 和風ツナマヨネーズ",
       "category": "おにぎり",
-      "protein": 5.5,
-      "fat": 1.6,
-      "carbs": 39.0,
-      "calories": 192,
-      "price": 156
+      "protein": 5.3,
+      "fat": 6.8,
+      "carbs": 38.1,
+      "calories": 232,
+      "price": 198
     },
     {
       "id": "seven-007",
-      "name": "全粒粉サンド ハム&チーズ",
-      "category": "サンドイッチ",
-      "protein": 13.8,
-      "fat": 13.5,
-      "carbs": 26.2,
-      "calories": 285,
-      "price": 268
-    },
-    {
-      "id": "seven-008",
-      "name": "ギリシャヨーグルト オイコス 加糖",
-      "category": "乳製品",
-      "protein": 10.1,
-      "fat": 0.0,
-      "carbs": 12.4,
-      "calories": 92,
-      "price": 168
-    },
-    {
-      "id": "seven-009",
-      "name": "プロテインバー（チョコ）",
-      "category": "プロテイン",
-      "protein": 15.0,
-      "fat": 7.0,
-      "carbs": 14.0,
+      "name": "直巻おむすび とり五目",
+      "category": "おにぎり",
+      "protein": 4.6,
+      "fat": 1.4,
+      "carbs": 38.1,
       "calories": 180,
       "price": 198
     },
     {
+      "id": "seven-008",
+      "name": "炭火で焼いた 焼おにぎり",
+      "category": "おにぎり",
+      "protein": 4.1,
+      "fat": 1.3,
+      "carbs": 45.1,
+      "calories": 205,
+      "price": 168
+    },
+    {
+      "id": "seven-009",
+      "name": "炭火焼き鳥と鶏つくね重",
+      "category": "お弁当",
+      "protein": 24.2,
+      "fat": 21.8,
+      "carbs": 91.0,
+      "calories": 651,
+      "price": 648
+    },
+    {
       "id": "seven-010",
-      "name": "ミックスナッツ 小袋",
-      "category": "ナッツ",
-      "protein": 6.8,
-      "fat": 21.2,
-      "carbs": 6.5,
-      "calories": 240,
-      "price": 198
+      "name": "ガーリックチキンステーキ弁当",
+      "category": "お弁当",
+      "protein": 27.1,
+      "fat": 16.0,
+      "carbs": 83.6,
+      "calories": 585,
+      "price": 688
+    },
+    {
+      "id": "seven-011",
+      "name": "照焼チキンとたまごサンド",
+      "category": "サンドイッチ",
+      "protein": 16.1,
+      "fat": 18.6,
+      "carbs": 26.9,
+      "calories": 337,
+      "price": 340
+    },
+    {
+      "id": "seven-012",
+      "name": "たまご＆ハムレタスサンド",
+      "category": "サンドイッチ",
+      "protein": 12.5,
+      "fat": 17.8,
+      "carbs": 24.8,
+      "calories": 307,
+      "price": 320
     }
   ]
 }

@@ -2,107 +2,147 @@
   "store": "mcdonalds",
   "store_name": "マクドナルド",
   "updated_at": "2026-05-15",
-  "note": "ダミーデータ（公式値は時期で変動。実運用前に最新値で更新してください）",
+  "note": "公式サイト（mcdonalds.co.jp）より取得",
   "items": [
     {
       "id": "mac-001",
       "name": "ハンバーガー",
       "category": "バーガー",
-      "protein": 12.6,
-      "fat": 9.0,
-      "carbs": 29.0,
-      "calories": 256,
-      "price": 200
+      "protein": 13.0,
+      "fat": 9.5,
+      "carbs": 30.3,
+      "calories": 259,
+      "price": 190
     },
     {
       "id": "mac-002",
-      "name": "ダブルチーズバーガー",
+      "name": "チーズバーガー",
       "category": "バーガー",
-      "protein": 26.0,
-      "fat": 25.7,
-      "carbs": 30.9,
-      "calories": 457,
-      "price": 400
+      "protein": 15.9,
+      "fat": 13.5,
+      "carbs": 31.0,
+      "calories": 310,
+      "price": 240
     },
     {
       "id": "mac-003",
       "name": "ビッグマック",
       "category": "バーガー",
-      "protein": 26.0,
-      "fat": 28.3,
-      "carbs": 41.8,
-      "calories": 530,
-      "price": 480
+      "protein": 26.1,
+      "fat": 28.0,
+      "carbs": 42.1,
+      "calories": 525,
+      "price": 500
     },
     {
       "id": "mac-004",
-      "name": "てりやきマックバーガー",
+      "name": "ダブルチーズバーガー",
       "category": "バーガー",
-      "protein": 14.7,
-      "fat": 27.3,
-      "carbs": 35.0,
-      "calories": 478,
-      "price": 380
+      "protein": 26.4,
+      "fat": 25.1,
+      "carbs": 31.8,
+      "calories": 459,
+      "price": 480
     },
     {
       "id": "mac-005",
-      "name": "チキンクリスプ",
+      "name": "マックチキン",
       "category": "バーガー",
-      "protein": 13.9,
-      "fat": 16.4,
-      "carbs": 30.7,
-      "calories": 326,
-      "price": 200
+      "protein": 13.5,
+      "fat": 19.2,
+      "carbs": 39.5,
+      "calories": 383,
+      "price": 190
     },
     {
       "id": "mac-006",
-      "name": "サイドサラダ",
-      "category": "サイド",
-      "protein": 0.8,
-      "fat": 0.1,
-      "carbs": 2.8,
-      "calories": 15,
-      "price": 250
+      "name": "チキンフィレオ",
+      "category": "バーガー",
+      "protein": 19.9,
+      "fat": 23.8,
+      "carbs": 47.0,
+      "calories": 479,
+      "price": 440
     },
     {
       "id": "mac-007",
-      "name": "マックフライポテト M",
-      "category": "サイド",
-      "protein": 4.7,
-      "fat": 20.6,
-      "carbs": 47.7,
-      "calories": 410,
-      "price": 350
+      "name": "フィレオフィッシュ",
+      "category": "バーガー",
+      "protein": 15.0,
+      "fat": 14.2,
+      "carbs": 37.4,
+      "calories": 338,
+      "price": 410
     },
     {
       "id": "mac-008",
-      "name": "チキンマックナゲット 5ピース",
-      "category": "サイド",
-      "protein": 14.7,
-      "fat": 16.0,
-      "carbs": 13.7,
-      "calories": 263,
-      "price": 250
+      "name": "エグチ",
+      "category": "バーガー",
+      "protein": 22.4,
+      "fat": 19.0,
+      "carbs": 31.2,
+      "calories": 390,
+      "price": 280
     },
     {
       "id": "mac-009",
-      "name": "プレミアムローストコーヒー M（ブラック）",
-      "category": "ドリンク",
-      "protein": 0.4,
-      "fat": 0.4,
-      "carbs": 1.5,
-      "calories": 12,
-      "price": 250
+      "name": "チキンタツタ",
+      "category": "バーガー",
+      "protein": 17.6,
+      "fat": 16.2,
+      "carbs": 39.9,
+      "calories": 373,
+      "price": 460
     },
     {
       "id": "mac-010",
-      "name": "エッグマックマフィン",
-      "category": "朝食",
-      "protein": 19.2,
-      "fat": 13.9,
-      "carbs": 27.1,
-      "calories": 311,
-      "price": 250
+      "name": "ベーコンレタスバーガー",
+      "category": "バーガー",
+      "protein": 17.4,
+      "fat": 19.4,
+      "carbs": 30.1,
+      "calories": 362,
+      "price": 450
+    },
+    {
+      "id": "mac-011",
+      "name": "マックポーク",
+      "category": "バーガー",
+      "protein": 15.1,
+      "fat": 22.7,
+      "carbs": 34.3,
+      "calories": 401,
+      "price": 230
+    },
+    {
+      "id": "mac-012",
+      "name": "ハッシュポテト",
+      "category": "サイド",
+      "protein": 1.4,
+      "fat": 10.2,
+      "carbs": 14.8,
+      "calories": 157,
+      "price": 180
+    },
+    {
+      "id": "mac-013",
+      "name": "マックフライポテト M",
+      "category": "サイド",
+      "protein": 5.5,
+      "fat": 19.8,
+      "carbs": 52.4,
+      "calories": 409,
+      "price": 290
+    },
+    {
+      "id": "mac-014",
+      "name": "チキンマックナゲット 5ピース",
+      "category": "サイド",
+      "protein": 15.3,
+      "fat": 15.9,
+      "carbs": 14.4,
+      "calories": 262,
+      "price": 290
     }
   ]
 }

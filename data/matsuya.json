@@ -2,107 +2,107 @@
   "store": "matsuya",
   "store_name": "松屋",
   "updated_at": "2026-05-15",
-  "note": "ダミーデータ（公式値は時期で変動。実運用前に最新値で更新してください）",
+  "note": "公式サイト（matsuyafoods.co.jp）より取得。栄養成分は並盛・セット（みそ汁込み）の値",
   "items": [
     {
       "id": "matsuya-001",
       "name": "牛めし（並盛）",
-      "category": "丼",
-      "protein": 19.8,
-      "fat": 18.0,
-      "carbs": 102.0,
-      "calories": 650,
-      "price": 430
+      "category": "牛めし",
+      "protein": 17.1,
+      "fat": 28.9,
+      "carbs": 85.5,
+      "calories": 687,
+      "price": 460
     },
     {
       "id": "matsuya-002",
-      "name": "プレミアム牛めし（並盛）",
-      "category": "丼",
-      "protein": 20.2,
-      "fat": 23.7,
-      "carbs": 103.5,
-      "calories": 720,
-      "price": 480
+      "name": "ネギたっぷり旨辛ネギたま牛めし（並盛）",
+      "category": "牛めし",
+      "protein": 24.7,
+      "fat": 36.2,
+      "carbs": 94.1,
+      "calories": 818,
+      "price": 660
     },
     {
       "id": "matsuya-003",
-      "name": "オリジナルカレー",
-      "category": "カレー",
-      "protein": 12.5,
-      "fat": 22.0,
-      "carbs": 110.0,
-      "calories": 690,
-      "price": 490
+      "name": "キムチ牛めし（並盛）",
+      "category": "牛めし",
+      "protein": 18.9,
+      "fat": 29.7,
+      "carbs": 94.4,
+      "calories": 736,
+      "price": 560
     },
     {
       "id": "matsuya-004",
-      "name": "焼肉定食",
-      "category": "定食",
-      "protein": 30.5,
-      "fat": 35.0,
-      "carbs": 95.0,
-      "calories": 870,
-      "price": 790
+      "name": "チーズ牛めし（並盛）",
+      "category": "牛めし",
+      "protein": 25.3,
+      "fat": 42.3,
+      "carbs": 87.1,
+      "calories": 846,
+      "price": 660
     },
     {
       "id": "matsuya-005",
-      "name": "豚生姜焼定食",
-      "category": "定食",
-      "protein": 27.0,
-      "fat": 28.0,
-      "carbs": 100.0,
+      "name": "鬼おろしポン酢牛めし（並盛）",
+      "category": "牛めし",
+      "protein": 18.3,
+      "fat": 29.1,
+      "carbs": 90.8,
+      "calories": 714,
+      "price": 560
+    },
+    {
+      "id": "matsuya-006",
+      "name": "創業ビーフカレー（セット）",
+      "category": "カレー",
+      "protein": 17.9,
+      "fat": 28.8,
+      "carbs": 102.8,
+      "calories": 769,
+      "price": 780
+    },
+    {
+      "id": "matsuya-007",
+      "name": "クリームバターカレー（セット）",
+      "category": "カレー",
+      "protein": 12.3,
+      "fat": 34.9,
+      "carbs": 103.3,
       "calories": 800,
       "price": 730
     },
     {
-      "id": "matsuya-006",
-      "name": "ささみねぎ塩定食",
-      "category": "定食",
-      "protein": 35.0,
-      "fat": 10.0,
-      "carbs": 95.0,
-      "calories": 620,
-      "price": 750
-    },
-    {
-      "id": "matsuya-007",
-      "name": "牛皿（並盛）単品",
-      "category": "単品",
-      "protein": 14.0,
-      "fat": 17.0,
-      "carbs": 8.0,
-      "calories": 250,
-      "price": 330
-    },
-    {
       "id": "matsuya-008",
-      "name": "サラダ（生野菜）",
-      "category": "サイド",
-      "protein": 1.0,
-      "fat": 0.2,
-      "carbs": 4.5,
-      "calories": 22,
-      "price": 100
+      "name": "タコライス",
+      "category": "丼",
+      "protein": 17.8,
+      "fat": 18.0,
+      "carbs": 96.2,
+      "calories": 637,
+      "price": 580
     },
     {
       "id": "matsuya-009",
-      "name": "豚汁（小）",
-      "category": "サイド",
-      "protein": 5.0,
-      "fat": 6.0,
-      "carbs": 8.0,
-      "calories": 110,
-      "price": 180
+      "name": "牛ビビン丼（並盛）",
+      "category": "丼",
+      "protein": 25.1,
+      "fat": 37.6,
+      "carbs": 98.3,
+      "calories": 851,
+      "price": 690
     },
     {
       "id": "matsuya-010",
-      "name": "鶏のから揚げ定食",
-      "category": "定食",
-      "protein": 28.0,
-      "fat": 32.0,
-      "carbs": 105.0,
-      "calories": 860,
-      "price": 790
+      "name": "キムカル丼（並盛）",
+      "category": "丼",
+      "protein": 19.8,
+      "fat": 31.4,
+      "carbs": 99.7,
+      "calories": 793,
+      "price": 690
     }
   ]
 }
