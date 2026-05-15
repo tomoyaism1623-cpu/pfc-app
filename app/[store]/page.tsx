@@ -7,7 +7,7 @@ import { use, useMemo, useState } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getStoreData, STORES } from "@/lib/stores";
-import { PRESETS, sortByCloseness, bestPairs } from "@/lib/score";
+import { PRESETS, sortByProteinFirst, bestPairs } from "@/lib/score";
 import { PFCInput } from "@/components/PFCInput";
 import { MenuCard } from "@/components/MenuCard";
 import { PairCard } from "@/components/PairCard";
@@ -25,8 +25,8 @@ export default function StorePage({ params }: { params: Promise<PageParams> }) {
   const [mode, setMode] = useState<Mode>("single");
 
   const sorted = useMemo(
-    () => sortByCloseness(data.items, target),
-    [data.items, target]
+    () => sortByProteinFirst(data.items),
+    [data.items]
   );
 
   const pairs = useMemo(
@@ -105,7 +105,7 @@ export default function StorePage({ params }: { params: Promise<PageParams> }) {
       {/* メニュー一覧 */}
       <section>
         <p className="mb-2 text-xs font-semibold text-stone-500">
-          おすすめ順（目標に近い順）
+          おすすめ順（タンパク質が高い順 → 脂質が低い順）
         </p>
 
         {mode === "single" ? (

@@ -36,6 +36,16 @@ export function sortByCloseness(
   );
 }
 
+// メニューを「タンパク質が高い順 → 脂質が低い順」で並べ替えて返す
+// 1位優先：タンパク質（多いほど上位）
+// 2位優先：脂質（少ないほど上位）
+export function sortByProteinFirst(items: MenuItem[]): MenuItem[] {
+  return [...items].sort((a, b) => {
+    if (b.protein !== a.protein) return b.protein - a.protein; // タンパク質 降順
+    return a.fat - b.fat;                                       // 脂質 昇順
+  });
+}
+
 // 2品の組み合わせを試して、目標に最も近いペアを返す
 // 全組み合わせ（nC2）を計算し、合算PFCとのスコアで比較する
 export type ItemPair = {
