@@ -1,43 +1,53 @@
 import Link from "next/link";
 import { STORES } from "@/lib/stores";
 
-// トップページ：店舗を選ぶだけのシンプルな入口
+// トップページ：Canvaデザインに合わせたスタイル
 export default function Home() {
   return (
-    <main className="mx-auto w-full max-w-2xl px-4 py-10 sm:py-16">
-      <header className="mb-8 text-center sm:mb-12">
-        <h1 className="text-2xl font-bold sm:text-3xl">
-          PFCバランス ごはん提案
+    <main className="mx-auto w-full max-w-sm px-6 py-12">
+      {/* タイトル */}
+      <header className="mb-8 text-center">
+        <h1
+          className="text-5xl font-black tracking-tight leading-none"
+          style={{ color: "#2D6A4F" }}
+        >
+          PFC
         </h1>
-        <p className="mt-3 text-sm leading-6 text-slate-600 sm:text-base">
+        <p className="mt-1 text-base font-semibold" style={{ color: "#2D6A4F" }}>
+          ごはん提案アプリ
+        </p>
+        <p className="mt-3 text-xs text-stone-500">
           コンビニ・ファストフードのメニューから、
-          <br className="sm:hidden" />
-          目標のPFC（タンパク質・脂質・炭水化物）に近いものを提案します。
+          <br />
+          目標のPFCに近いものを提案します。
         </p>
       </header>
 
+      {/* 店舗カード グリッド */}
       <section>
-        <h2 className="mb-3 text-sm font-semibold text-slate-700">
-          店舗を選んでください
-        </h2>
-        <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+        <p className="mb-3 text-xs font-semibold text-stone-500">店舗を選んでください</p>
+        <ul className="grid grid-cols-2 gap-3">
           {STORES.map((s) => (
             <li key={s.slug}>
               <Link
                 href={`/${s.slug}`}
-                className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition-colors hover:border-emerald-400 hover:bg-emerald-50"
+                className="flex flex-col items-center justify-center gap-2 rounded-2xl bg-white p-5 shadow-sm transition-all hover:shadow-md active:scale-95"
+                style={{ minHeight: "110px" }}
               >
-                <span className="text-2xl" aria-hidden>
-                  {s.emoji}
+                <span className="text-3xl" aria-hidden>{s.emoji}</span>
+                <span
+                  className="text-sm font-bold text-center leading-tight"
+                  style={{ color: "#2D6A4F" }}
+                >
+                  {s.name}
                 </span>
-                <span className="text-base font-medium">{s.name}</span>
               </Link>
             </li>
           ))}
         </ul>
       </section>
 
-      <footer className="mt-12 text-center text-xs text-slate-400">
+      <footer className="mt-10 text-center text-xs text-stone-400">
         現在はダミーデータで動作しています
       </footer>
     </main>

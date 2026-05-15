@@ -1,6 +1,6 @@
 "use client";
 
-// 目標PFCを入力するフォーム。プリセット（増量/維持/減量）でワンタップ入力も可能。
+// 目標PFCを入力するフォーム（Canvaデザイン準拠）
 
 import { PRESETS } from "@/lib/score";
 import type { TargetPFC } from "@/lib/types";
@@ -11,89 +11,69 @@ type Props = {
 };
 
 export function PFCInput({ value, onChange }: Props) {
-  // 数字入力のヘルパー（空欄を許すと扱いが面倒なので、0以上の数値だけ受ける）
   function setField(field: keyof TargetPFC, raw: string) {
     const n = Number(raw);
-    onChange({
-      ...value,
-      [field]: Number.isFinite(n) && n >= 0 ? n : 0,
-    });
+    onChange({ ...value, [field]: Number.isFinite(n) && n >= 0 ? n : 0 });
   }
 
   return (
-    <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
-      <h2 className="mb-3 text-sm font-semibold text-slate-700">
-        目標PFC（1食あたりの目安）
-      </h2>
+    <div className="rounded-2xl bg-white p-4 shadow-sm">
+      <p className="mb-3 text-xs font-semibold text-stone-500">目標PFC入力（1食あたり）</p>
 
       {/* プリセットボタン */}
-      <div className="mb-4 flex flex-wrap gap-2">
+      <div className="mb-4 flex gap-2">
         {PRESETS.map((p) => (
           <button
             key={p.id}
             type="button"
             onClick={() => onChange(p.target)}
-            className="rounded-full border border-slate-300 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700 hover:border-emerald-400 hover:bg-emerald-50"
+            className="flex-1 rounded-full py-1.5 text-xs font-bold transition-all"
+            style={{
+              background:
+                value.protein === p.target.protein &&
+                value.fat === p.target.fat &&
+                value.carbs === p.target.carbs
+                  ? "#2D6A4F"
+                  : "#D8F3DC",
+              color:
+                value.protein === p.target.protein &&
+                value.fat === p.target.fat &&
+                value.carbs === p.target.carbs
+                  ? "#ffffff"
+                  : "#2D6A4F",
+            }}
           >
             {p.label}
-            <span className="ml-1 text-slate-400">
-              P{p.target.protein}/F{p.target.fat}/C{p.target.carbs}
-            </span>
           </button>
         ))}
       </div>
 
       {/* 数値入力 */}
-      <div className="grid grid-cols-3 gap-3">
-        <Field
-          label="タンパク質"
-          unit="g"
-          value={value.protein}
-          onChange={(v) => setField("protein", v)}
-        />
-        <Field
-          label="脂質"
-          unit="g"
-          value={value.fat}
-          onChange={(v) => setField("fat", v)}
-        />
-        <Field
-          label="炭水化物"
-          unit="g"
-          value={value.carbs}
-          onChange={(v) => setField("carbs", v)}
-        />
+      <div className="grid grid-cols-3 gap-2">
+        {(["protein", "fat", "carbs"] as const).map((field) => {
+          const labels = { protein: "タンパク質", fat: "脂質", carbs: "炭水化物" };
+          return (
+            <label key={field} className="block">
+              <span className="block text-[10px] font-semibold mb-1" style={{ color: "#2D6A4F" }}>
+                {labels[field]}
+              </span>
+              <div className="flex items-center gap-0.5">
+                <input
+                  type="number"
+                  inputMode="decimal"
+                  min={0}
+                  step={1}
+                  value={value[field]}
+                  onChange={(e) => setField(field, e.target.value)}
+                  className="w-full rounded-lg border border-stone-200 bg-stone-50 px-2 py-1.5 text-right text-sm font-bold focus:outline-none"
+                  style={{ color: "#2D6A4F" }}
+                />
+                <span className="text-[10px] text-stone-400 shrink-0">g</span>
+              </div>
+            </label>
+          );
+        })}
       </div>
     </div>
-  );
-}
-
-function Field({
-  label,
-  unit,
-  value,
-  onChange,
-}: {
-  label: string;
-  unit: string;
-  value: number;
-  onChange: (raw: string) => void;
-}) {
-  return (
-    <label className="block">
-      <span className="block text-xs font-medium text-slate-600">{label}</span>
-      <span className="mt-1 flex items-center gap-1">
-        <input
-          type="number"
-          inputMode="decimal"
-          min={0}
-          step={1}
-          value={value}
-          onChange={(e) => onChange(e.target.value)}
-          className="w-full rounded-md border border-slate-300 bg-white px-2 py-1.5 text-right text-base focus:border-emerald-500 focus:outline-none"
-        />
-        <span className="text-xs text-slate-500">{unit}</span>
-      </span>
-    </label>
   );
 }

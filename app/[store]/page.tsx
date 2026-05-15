@@ -1,7 +1,7 @@
-// 店舗別ページ：URL の [store] からデータを取り、クライアント側で並び替え表示
-// Next.js 16 では params は Promise なので use() で解決する
-
 "use client";
+
+// 店舗別ページ（Canvaデザイン準拠）
+// Next.js 16 では params は Promise なので use() で解決する
 
 import { use, useMemo, useState } from "react";
 import Link from "next/link";
@@ -14,47 +14,49 @@ import type { TargetPFC } from "@/lib/types";
 
 type PageParams = { store: string };
 
-export default function StorePage({
-  params,
-}: {
-  params: Promise<PageParams>;
-}) {
+export default function StorePage({ params }: { params: Promise<PageParams> }) {
   const { store } = use(params);
   const data = getStoreData(store);
   if (!data) notFound();
 
-  // 初期値は「維持」プリセット
+  const currentStore = STORES.find((s) => s.slug === store);
   const [target, setTarget] = useState<TargetPFC>(PRESETS[1].target);
 
-  // 並び替え結果（target が変わるたびに計算）
   const sorted = useMemo(
     () => sortByCloseness(data.items, target),
     [data.items, target]
   );
 
   return (
-    <main className="mx-auto w-full max-w-2xl px-4 py-6 sm:py-10">
-      {/* ヘッダー：店舗切り替えタブ */}
-      <header className="mb-4">
-        <Link
-          href="/"
-          className="text-xs text-slate-500 hover:text-emerald-600"
-        >
-          ← トップへ
-        </Link>
-        <h1 className="mt-1 text-xl font-bold sm:text-2xl">
-          {data.store_name}
-        </h1>
+    <main className="mx-auto w-full max-w-sm px-4 py-6">
 
-        <nav className="mt-3 flex gap-2 overflow-x-auto">
+      {/* ヘッダー */}
+      <header className="mb-4">
+        <Link href="/" className="text-xs text-stone-400 hover:text-stone-600">
+          ← もどる
+        </Link>
+
+        <div className="mt-2 flex items-center gap-2">
+          <span className="text-2xl">{currentStore?.emoji}</span>
+          <div>
+            <h1 className="text-lg font-black leading-tight" style={{ color: "#2D6A4F" }}>
+              {data.store_name}
+            </h1>
+            <p className="text-[10px] text-stone-400">目標PFC入力</p>
+          </div>
+        </div>
+
+        {/* 店舗切り替えタブ */}
+        <nav className="mt-3 flex gap-2 overflow-x-auto pb-1">
           {STORES.map((s) => (
             <Link
               key={s.slug}
               href={`/${s.slug}`}
-              className={
+              className="shrink-0 rounded-full px-3 py-1 text-xs font-bold transition-all"
+              style={
                 s.slug === store
-                  ? "shrink-0 rounded-full bg-emerald-500 px-3 py-1 text-xs font-bold text-white"
-                  : "shrink-0 rounded-full border border-slate-300 bg-white px-3 py-1 text-xs text-slate-700 hover:border-emerald-400"
+                  ? { background: "#2D6A4F", color: "#fff" }
+                  : { background: "#fff", color: "#2D6A4F" }
               }
             >
               {s.emoji} {s.name}
@@ -63,29 +65,24 @@ export default function StorePage({
         </nav>
       </header>
 
-      {/* 入力フォーム */}
+      {/* PFC入力 */}
       <div className="mb-4">
         <PFCInput value={target} onChange={setTarget} />
       </div>
 
-      {/* メニュー一覧（目標に近い順） */}
+      {/* メニュー一覧 */}
       <section>
-        <h2 className="mb-2 text-sm font-semibold text-slate-700">
+        <p className="mb-2 text-xs font-semibold text-stone-500">
           おすすめ順（目標に近い順）
-        </h2>
+        </p>
         <ul className="space-y-2">
           {sorted.map((item, i) => (
-            <MenuCard
-              key={item.id}
-              item={item}
-              target={target}
-              rank={i + 1}
-            />
+            <MenuCard key={item.id} item={item} target={target} rank={i + 1} />
           ))}
         </ul>
       </section>
 
-      <p className="mt-6 text-center text-[10px] text-slate-400">
+      <p className="mt-6 text-center text-[10px] text-stone-400">
         {data.note ?? ""}
       </p>
     </main>
